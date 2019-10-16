@@ -45,87 +45,71 @@ The following are the criteria by which you should assess your peer's solution o
 
 ### Stage 1 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
-- [x] Good
+- [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justification ##### 
-Write Justification here.
+Captain moves in the correct direction and with the correct orientation when either movement key is pressed. Code is simple and similar to the movement in opposite direction, and works as intended.
 
 ### Stage 2 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
-- [x] Good
+- [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justification ##### 
-Write Justification here.
+When a pirate is motivated, they will start producing at either a slow, medium, or fast rate and produce for the correct amount of time. Also, the pirates can only be motivated while they are currently exhausted, and attempting to motivate a pirate who is currently producing has no effect. The implementation by waiting PRODUCTION_TIME seconds before producing again is efficient and works well.
 
 ### Stage 3 ###
 
-- [ ] Perfect
-- [ ] Great
-- [x] Good
-- [ ] Satisfactory
-- [ ] Unsatisfactory
-
-#### Justifaction ##### 
-Write justifaction here.
-
-### Stage 4 ###
-
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justifaction ##### 
-Write justifaction here.
+Has a switch statement which correctly assigns a random work speed to whichever pirate is currently being motivated, with a simple Random.Range() value between 1 and 3. Good implementation of a default case to catch and deal with any errors in the random assignment.
+
+### Stage 4 ###
+
+- [x] Perfect
+- [ ] Great
+- [ ] Good
+- [ ] Satisfactory
+- [ ] Unsatisfactory
+
+#### Justifaction ##### 
+Implemented a simple jump command that works as it should, but added complexity with a Serialized field determining how many extra jumps the captain can perform while mid-air. This value works as it, the captain can only jump while they have "extrajumps" remaining, otherwise they must hit the ground before they can jump again. 
 
 ## Code Style ##
 
 ### Description ###
-Check the scripts to see if the student code adheres to the dotnet style guide.
 
-If there are sections that don't adhere to the style guide, please peramlink the line of code from Github and justify why the line of code has infractured the style guide.
+Good job overall following the style conventions. Comments are in the right places and helpful, and functions are usually clearly seperated and make sense. Variables were correctly named and correctly instanced. There were just a few issues I saw with newlines and spacing:
 
-It should look something like this:
+* [inconsistent newline](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/MoveCharacter.cs#L48) - The newlines in this function (MoveCharacterJump) are not necessarily wrong, but they are not consistent with the spacing in the other two functions in this class. This also occurs in the worker pirate commands here: 
+* [another instance](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/FastWorkerPirateCommand.cs#L36)
 
-* [description of infraction](https://github.com/dr-jam/ECS189L) - this is the justification.
-
-Here is an example of the permalink drop down on Github.
-
-![Permalink option](../images/permalink_example.png)
-
-Here is another example as well.
-
-* [I go to Github and look at the ICommand script in the ECS189L repo!](https://github.com/dr-jam/ECS189L/blob/1618376092e85ffd63d3af9d9dcc1f2078df2170/Projects/CommandPatternExample/Assets/Scripts/ICommand.cs#L5)
-
-### Code Style Review ###
-
-#### Style Guide Infractions ####
-
-#### Style Guide Exemplars ####
+* [inconsistent spacing](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/SlowWorkerPirateCommand.cs#L40) - The spacing between the if and () is different from the other Command functions. Again, this is not wrong, just different from the other template Commands.
 
 ## Best Practices ##
 
 ### Description ###
 
-If the student has followed best practices (Unity coding conventions from the StyleGuides document) then feel free to point at these segments of code as examplars. 
+This code follows the best practices very well overall. 
 
-If the student has breached the best practices and has done something that should be noted, please add the infracture.
+* [helpful comments](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/CaptainController.cs#L83) - I appreciated how there were comments for all of the new code in the CaptainController to deal with the extra jumps by the Captain. These were placed well to indicate what they referred to, and were succinct while still explaining each new line. These comments should according to conventions be on their own line, but in this case I think the placement makes them more effective.
 
-This should be similar to the Code Style justification.
+Aside from a few minor differences, the different classes and functions were all very uniform and easy to understand.
 
-* [description of infraction](https://github.com/dr-jam/ECS189L) - this is the justification.
+* [well put together functions](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/FastWorkerPirateCommand.cs#L30) - The layout and functionality of the different pirate speed commands was very well done. They are easy to follow and work efficiently and the way they are supposed to.
 
-### Best Practices Refiew ###
+One slight deviation from best practices are certain variable names not being Pascal Case:
+* [example of incorrect variable name](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/MoveCharacter.cs#L44)
 
-#### Best Practices Infractions ####
-
-#### Best Practices Exemplars ####
