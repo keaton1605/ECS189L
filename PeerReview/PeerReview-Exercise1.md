@@ -94,8 +94,9 @@ Implemented a simple jump command that works as it should, but added complexity 
 Good job overall following the style conventions. Comments are in the right places and helpful, and functions are usually clearly seperated and make sense. Variables were correctly named and correctly instanced. There were just a few issues I saw with newlines and spacing:
 
 * [inconsistent newline](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/MoveCharacter.cs#L48) - The newlines in this function (MoveCharacterJump) are not necessarily wrong, but they are not consistent with the spacing in the other two functions in this class. 
+
 This also occurs in the worker pirate commands here: 
-* [another instance](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/FastWorkerPirateCommand.cs#L36)
+* [another inconsistent newline](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/FastWorkerPirateCommand.cs#L36)
 
 * [inconsistent spacing](https://github.com/ensemble-ai/exercise1-commandpattern-Aligulac/blob/20fdb5e856ac04dd7a5462978516128b51f01dab/Captain/Assets/Scripts/SlowWorkerPirateCommand.cs#L40) - The spacing between the if and () is different from the other Command functions. Again, this is not wrong, just different from the other template Commands.
 
