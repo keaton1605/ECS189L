@@ -21,6 +21,11 @@ If you are in the rare situation where there are two peer-reviewers on a single 
 
 ## Solution Assessment ##
 
+## Peer-reviewer Information ##
+
+* *name:* [Keaton Elliott] 
+* *email:* [kecelliott@ucdavis.edu]
+
 ### Stage 1 ###
 
 - [x] Perfect
