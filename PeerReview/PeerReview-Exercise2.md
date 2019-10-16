@@ -24,32 +24,8 @@ ___
 
 ## Peer-reviewer Information
 
-* *name:* [your name here] 
-* *email:* [your @ucdavis.edu email address here]
-
-### Description ###
-
-For assessing the solution, you will be choosing ONE choice from: unsatisfactory, satisfactory, good, great, or perfect.
-
-The break down of each of these labels for the solution assessment.
-
-#### Perfect #### 
-    Can't find any flaws in relation to the prompt. Perfectly satisfied all stage objectives.
-
-#### Great ####
-    Minor flaws in one or two objectives. 
-
-#### Good #####
-    Major flaw and some minor flaws.
-
-#### Satisfactory ####
-    Couple of major flaws. Heading towards solution, however did not fully realize solution.
-
-#### Unsatisfactory ####
-    Partial work, not really converging to a solution. Pervasive Major flaws. Objective largely unmet.
-
-
-___
+* *name:* [Keaton Elliott] 
+* *email:* [kecelliott@ucdavis.edu]
 
 ## Solution Assessment ##
 
