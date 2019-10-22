@@ -1,25 +1,5 @@
 # Peer-Review for Programming Exercise 2 #
 
-## Description ##
-
-For this assignment, you will be giving feedback on the completeness of assignment two: Obscura. In order to to do so, we will be giving you a rubric to give feedback on. For the feedback, please give positive criticism and suggestions on how to fix segments of code.
-
-You only need to review code modified or created by the student you are reviewing. You do not have to review the code and project files that were given out by the instructor.
-
-Abusive or hateful language or comments will not be tolerated and will result in a grade penalty or be considered a breach of the UC Davis Code of Academic Conduct.
-
-If there are any questions at any point, please email the TA.   
-
-Email: asisandhu at ucdavis dot edu
-
-## Due Date and Submission Information
-This code review is due on:  
-*Friday, May 3rd at 11:59 PM*
-
-A successful submission should consist of a copy of this markdown document template that is modified with your peer-review. The file name should be the same as it is in the template: `CodeReview-Exercise2.md`. You also need to include your name and email address in the `Peer-reviewer Information` section below. This review document should be placed into the base folder of the repo you are reviewing in a branch called `review`. This branch should be on the origin of the repository you are reviewing.
-
-If you are in the rare situation where there are two peer-reviewers on a single repository, append your UC Davis user name before the extension of your review file. An example: `CodeReview-Exercise2-username.md`. Both reviewers should submit their reviews in the `review` branch.
-___
 # Solution Assessment #
 
 ## Peer-reviewer Information
@@ -31,7 +11,7 @@ ___
 
 ### Stage 1 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
@@ -39,38 +19,38 @@ ___
 
 ___
 #### Justifaction ##### 
-Write justifaction here.
+The camera locks on the player as they move around. The correct lines are displayed when draw logic is true, and there are no serialized fields.
 
 ___
 ### Stage 2 ###
 
 - [ ] Perfect
 - [ ] Great
-- [ ] Good
+- [x] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 ___
 #### Justifaction ##### 
-Write justifaction here.
+The DrawLogic and serialized fields work as they should. If the player hits the edge of the screen, they move at the same speed as the screen. However, the player can still move past the edge of the screen if they attempt to move in the opposite direction of the screen motion. They will get moved back if they stop pressing the left direction.
 
 ___
 ### Stage 3 ###
 
 - [ ] Perfect
-- [ ] Great
+- [x] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 ___
 #### Justifaction ##### 
-Write justifaction here.
+The camera lerps behind the player as the player moves. It catches up with the player after the lerp duration. The movement of the camera takes a second to update, but this seems to just when the update function is called.
 
 ___
 ### Stage 4 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
@@ -78,40 +58,32 @@ ___
 
 ___
 #### Justifaction ##### 
-Write justifaction here.
+The player follows the camera correctly, and it takes the lerp duration to get back. The lerp also successfully only affects the x and y axes.
 
 ___
 ### Stage 5 ###
 
 - [ ] Perfect
 - [ ] Great
-- [ ] Good
+- [x] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 ___
 #### Justifaction ##### 
-Write justifaction here.
+At small push ratios, the speed up push box works, but the edges of the box are inside the actual Draw Logic. When the push ratio is increased, the camera essentially lerps behind the player until it hits the edge, and at that point the player sticks to the edge. Also, the camera lerps back to centered on the player when the player stops moving, which is a nice extra feature.
+
 ___
 # Code Style #
 
 
 ### Description ###
-Check the scripts to see if the student code adheres to the dotnet style guide.
+The style overall in this code follows the guide very well. There are plenty of examples of good use of (var) instead of setting the variable to something, like the following.
+* [good variable description](https://github.com/ensemble-ai/exercise2-cameracontroller-MichaelCordero98/blob/5e88de534819b87e3453640b21f469b3bc0cdd1a/Obscura/Assets/Scripts/TargetFocusLerpCamera.cs#L31)
+* [another good variable](https://github.com/ensemble-ai/exercise2-cameracontroller-MichaelCordero98/blob/5e88de534819b87e3453640b21f469b3bc0cdd1a/Obscura/Assets/Scripts/FourWaySpeedupPushZoneCamera.cs#L30)
 
-If there are sections that don't adhere to the style guide, please peramlink the line of code from Github and justify why the line of code has infractured the style guide.
-
-It should look something like this:
-
-* [description of infraction](https://github.com/dr-jam/ECS189L) - this is the justification.
-
-Please refer to the first code review template on how to do a permalink.
-
-
-## Code Style Infractures ##
-
-___
-#### Put style guide infractures ####
+Also the functions are described well and the spacing is uniform throughout all the code. This can be seen with the indentation and the location of the brackets in the functions, like here.
+* [correct bracket](https://github.com/ensemble-ai/exercise2-cameracontroller-MichaelCordero98/blob/5e88de534819b87e3453640b21f469b3bc0cdd1a/Obscura/Assets/Scripts/TargetFocusLerpCamera.cs#L30)
 
 ___
 
@@ -119,15 +91,9 @@ ___
 
 ### Description ###
 
-If the student has followed best practices (Unity coding conventions from the StyleGuides document) then feel free to point at these segments of code as examplars. 
+The comments about this code are well placed and do a good job of conveying the meanings of the simple functions and variable definitions. They are also well spaced and don't contribute too much clutter in their concise natue.
+* [short/helpful comment](https://github.com/ensemble-ai/exercise2-cameracontroller-MichaelCordero98/blob/5e88de534819b87e3453640b21f469b3bc0cdd1a/Obscura/Assets/Scripts/TargetFocusLerpCamera.cs#L40) Although this comment is misspelled, it conveys what it is trying to say very well.
 
-If the student has breached the best practices and has done something that should be noted, please add the infracture.
+The spacing between and surrounding parentheses is uniform and makes if statements and other functions easy to follow.
+* [uniform parentheses](https://github.com/ensemble-ai/exercise2-cameracontroller-MichaelCordero98/blob/5e88de534819b87e3453640b21f469b3bc0cdd1a/Obscura/Assets/Scripts/FrameAutoScrollCamera.cs#L30)
 
-
-This should be similar to the Code Style justification.
-
-## Best Practice observations ##
-
-___
-### Put best practice observations here ###
-___
