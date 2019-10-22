@@ -32,7 +32,7 @@ ___
 
 ___
 #### Justifaction ##### 
-The DrawLogic and serialized fields work as they should. If the player hits the edge of the screen, they move at the same speed as the screen. However, the player can still move past the edge of the screen if they attempt to move in the opposite direction of the screen motion. They will get moved back if they stop pressing the left direction.
+The DrawLogic and serialized fields work as they should. If the player hits the edge of the screen, they move at the same speed as the screen. However, the player can still move past the edge of the screen if they attempt to move in the opposite direction of the screen motion. They will get moved back if they stop pressing the left direction. Also the natural movement at this edge is slightly jerky, meaning the speed of the target and camera are probably travelling at slightly different speeds.
 
 ___
 ### Stage 3 ###
